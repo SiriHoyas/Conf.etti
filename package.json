@@ -1,0 +1,23 @@
+{
+  "name": "projectguide",
+  "version": "0.0.1",
+  "description": "a site to help you set up a new project",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiriHoyas/projectSetup.git"
+  },
+  "keywords": [
+    "help"
+  ],
+  "author": "Siri Høyås <siri@skjervold.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiriHoyas/projectSetup/issues"
+  },
+  "homepage": "https://github.com/SiriHoyas/projectSetup#readme"
+}
