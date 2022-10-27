@@ -1,6 +1,6 @@
 {
   "name": "projectguide",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a site to help you set up a new project",
   "type": "module",
   "main": "index.js",
