@@ -14,10 +14,96 @@
     />
   </head>
   <body>
-    <h1>How to set up a new project</h1>
+    <main class="container">
+      <nav>
+        <h1>How to set up a new project</h1>
+      </nav>
 
-    <div>
-      <h2>Step 1</h2>
-    </div>
+      <div class="step-1 step">
+        <div class="steps-wrapper">
+          <h2>Step 1</h2>
+          <p>Make a project folder locally on your computer.</p>
+          <p>
+            Open the folder in your code editor, or navigate to in in your
+            terminal
+          </p>
+          <p>
+            Create a new Git repository with the command
+            <span class="terminal-input">git init</span>
+          </p>
+        </div>
+        <div class="scroll-down">
+          <img src="/img/down-arrow.svg" alt="down arrow" class="down-arrrow" />
+        </div>
+      </div>
+      <div class="step-2 step">
+        <div class="steps-wrapper">
+          <h2>Step 2</h2>
+          <p>
+            If you want to publish your repository to
+            <img
+              src="/img/github.svg"
+              alt="github logo"
+              class="svg-small"
+            />Github, you'll need to create a repository on github.com
+          </p>
+          <p>
+            Add your local repo to github with the command
+            <span class="terminal-input"
+              >git remote add origin {github repo URL}</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="step-3 step">
+        <div class="steps-wrapper">
+          <h2>Step 3</h2>
+          <p>
+            In your project you'll need a
+            <span class="terminal-input">.gitignore</span> file
+          </p>
+          <p>This is to ensure that certain files are not tracked by Git.</p>
+          <p>Here are some common things to ignore:</p>
+          <div>
+            <span class="terminal-input">node_modules</span>
+            <span class="terminal-input">.DS_Store</span>
+            <span class="terminal-input">.env</span>
+          </div>
+        </div>
+      </div>
+      <div class="step-4 step">
+        <div class="steps-wrapper">
+          <h2>Step 4</h2>
+          <p>Set up your Node Package Manager (NPM)</p>
+          <p>
+            To do this, write the command
+            <span class="terminal-input">npm init</span>
+          </p>
+          <p>You will get a series of questions about your project.</p>
+          <p>
+            You can also write
+            <span class="terminal-input">npm init -y</span> to skip the
+            questions all together!
+          </p>
+          <p>
+            If it worked, you should see a package.json file in your project
+            folder
+          </p>
+        </div>
+      </div>
+      <div class="step-5 step">
+        <div class="steps-wrapper">
+          <h2>Step 5</h2>
+          <p>You are now ready to install dependencies!</p>
+          <div>
+            <a class="terminal-input" href="">SASS</a>
+            <a class="terminal-input" href="">Bootstrap</a>
+            <a class="terminal-input" href="">Tailwind</a>
+            <a class="terminal-input" href="">ES Lint</a>
+            <a class="terminal-input" href="">Prettier</a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
