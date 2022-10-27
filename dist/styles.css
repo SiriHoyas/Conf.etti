@@ -1,6 +1,14 @@
 body {
-  background-color: black;
-  background-color: violet;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

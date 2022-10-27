@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "watch": "sass --watch sass/styles.scss:dist/styles.css"
+    "watch": "sass --watch sass/styles.scss:dist/styles.css",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,26 @@
   },
   "homepage": "https://github.com/SiriHoyas/projectSetup#readme",
   "devDependencies": {
+    "eslint": "^8.26.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "sass": "^1.55.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    ".mjs": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
   }
 }

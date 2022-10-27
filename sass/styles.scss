@@ -1,4 +1,14 @@
+@import "./components/variables";
+
 body {
-  background-color: black;
-  background-color: violet;
+  font-family: $body-text;
+}
+
+h1 {
+  font-family: $heading-text;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
 }
