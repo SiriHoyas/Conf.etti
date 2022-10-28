@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <nav>
+        <h1>Install and compile SASS</h1>
+      </nav>
+
+      <div class="step-1 step">
+        <div class="steps-wrapper">
+          <h2>Step 1 - Install SASS</h2>
+          <p>
+            To install SASS you'll need to have Node Package Manager (NPM)
+            installed.
+          </p>
+          <p>
+            Write the command
+            <span class="terminal-input">npm install -D sass</span> in your
+            terminal.
+          </p>
+          <p>SASS is now installed as a dependency in your project</p>
+        </div>
+        <div class="scroll-down">
+          <img src="/img/down-arrow.svg" alt="down arrow" class="down-arrrow" />
+        </div>
+      </div>
+      <div class="step-2 step">
+        <div class="steps-wrapper">
+          <h2>Step 2 - Add the files you need</h2>
+          <p>
+            You'll need one file for your SASS, and one for your CSS (SASS
+            compiles in to this file)
+          </p>
+          <p>The CSS file you make is the one you link in your HTML files</p>
+        </div>
+      </div>
+      <div class="step-3 step">
+        <div class="steps-wrapper">
+          <h2>Step 3 - Compile SASS in realtime</h2>
+          <p>
+            To compile the SASS when you save, go to your
+            <span class="terminal-input">package.json</span> file
+          </p>
+          <p>
+            You will add a script with a
+            <span class="terminal-input">--watch</span> flag.
+          </p>
+          <p>
+            This flag tells SASS to watch source files for changes, and
+            re-compile to CCS each time you save your SASS
+          </p>
+          <p>
+            The script you are adding is
+            <span class="terminal-input"
+              >"watch": "sass --watch sass-file:css-file"
+              <p>
+                Remember to change the sass-file and css-file placeholder to
+                your output and input files!
+              </p>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="step-4 step">
+        <div class="steps-wrapper">
+          <h2>Step 4 - Run it!</h2>
+          <p>
+            You can now run the script, and SASS compiles to CSS like magic!
+          </p>
+          <p>
+            In the terminal, write the command
+            <span class="terminal-input">npm run watch</span>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
