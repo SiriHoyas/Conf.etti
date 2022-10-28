@@ -1,0 +1,21 @@
+.index-body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $main-purple;
+}
+
+.heading {
+  margin-top: 2rem;
+}
+
+.links {
+  margin-bottom: 15rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}

@@ -1,32 +1,91 @@
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #691ad7;
+  width: 100vw;
+  color: #fdfdfd;
+  font-family: "Quicksand", sans-serif;
+  padding: 0.3rem;
+  position: fixed;
+  top: 0;
+}
+nav section {
+  width: 33%;
+}
+nav .confetti-logo {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+}
+nav .nav-center {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+nav .nav-right {
+  text-align: end;
+}
+nav .nav-right .btn {
+  font-size: 1rem;
+  width: auto;
+  padding: 0.3rem 1rem;
+  margin-left: 1rem;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
 
 body {
   margin: 0;
 }
 
-nav {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(255, 255, 243);
-  width: 100vw;
-}
-
 h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
 }
 
-.terminal-input {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.code {
   border: 0.2px solid grey;
   border-radius: 2px;
   padding: 3px;
   background-color: gainsboro;
   margin-left: 0.3rem;
+  font-size: 1rem;
   margin-right: 0.3rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.6rem;
+  width: 10rem;
+  border-radius: 25px;
+  background-color: #ef7c85;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .svg-small {
@@ -35,18 +94,13 @@ h1 {
   margin-left: 0.3rem;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
 }
 
-.step {
+.step-slide {
   width: 100vw;
   height: 100%;
   scroll-snap-align: start;
@@ -54,8 +108,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(130, 170, 238);
 }
-.step .steps-wrapper {
+.step-slide .steps-wrapper {
   background-color: rgb(255, 255, 243);
   width: 80%;
   height: auto;
@@ -65,47 +120,27 @@ a {
   align-items: center;
   border-radius: 5px;
 }
-.step h2 {
-  font-size: 2rem;
-  font-family: "Josefin Sans", sans-serif;
-}
-.step p {
+
+.index-body {
   display: flex;
-  align-items: center;
-  font-size: 1.3rem;
-}
-.step .scroll-down {
-  position: absolute;
-  bottom: 0;
-  display: flex;
+  height: 100vh;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-.step .scroll-down img {
-  width: 70px;
-  margin-bottom: 2rem;
-  fill: wheat;
+  background-color: #691ad7;
 }
 
-.step-1 {
-  background-color: rgb(78, 216, 170);
+.heading {
+  margin-top: 2rem;
 }
 
-.step-2 {
-  background-color: rgb(66, 90, 211);
-}
-
-.step-3 {
-  background-color: rgb(172, 70, 190);
-}
-
-.step-4 {
-  background-color: rgb(201, 177, 38);
-}
-
-.step-5 {
-  background-color: rgb(90, 99, 230);
+.links {
+  margin-bottom: 15rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

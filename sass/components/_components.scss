@@ -1,0 +1,27 @@
+.code {
+  border: 0.2px solid grey;
+  border-radius: 2px;
+  padding: 3px;
+  background-color: gainsboro;
+  margin-left: 0.3rem;
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.6rem;
+  width: 10rem;
+  border-radius: 25px;
+  background-color: #ef7c85;
+  color: white;
+  font-family: $heading-text;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.svg-small {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 0.3rem;
+}
