@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <nav>
+        <h1>Run ES Lint and Prettier on commit</h1>
+      </nav>
+
+      <div class="step-1 step">
+        <div class="steps-wrapper">
+          <h2>Step 1 - Install ESLint and Prettier</h2>
+          <p>
+            To install ESLint and Prettier you'll need to have Node Package
+            Manager (NPM) installed.
+          </p>
+          <p>
+            Use NPM to install Prettier and ESLint with the following commands
+          </p>
+          <p>
+            <span class="terminal-input">npm install --save-dev prettier</span>
+            <span class="terminal-input">npm install eslint --save-dev</span>
+          </p>
+        </div>
+        <div class="scroll-down">
+          <img src="/img/down-arrow.svg" alt="down arrow" class="down-arrrow" />
+        </div>
+      </div>
+      <div class="step-2 step">
+        <div class="steps-wrapper">
+          <h2>Step 2 - Initialize ESLint</h2>
+          <p>We need to initialize and setup rules for ESLint.</p>
+          <p>
+            Write the command
+            <span class="terminal-input">npx eslint --init </span> and you will
+            get a series of questions to setup ESLint
+          </p>
+        </div>
+      </div>
+      <div class="step-3 step">
+        <div class="steps-wrapper">
+          <h2>Step 3 - Install package to generate scripts</h2>
+          <p>
+            Use the tool Mrm to generate script to run Prettier and ESLint on
+            commit.
+          </p>
+          <p>This is a pre-commit hook</p>
+          <p>
+            In your terminal, write
+            <span class="terminal-input">npx mrm@2 lint-staged</span>
+          </p>
+        </div>
+      </div>
+      <div class="step-4 step">
+        <div class="steps-wrapper">
+          <h2>Step 4 - Set up tasks</h2>
+          <p>
+            In your package.json file, you will now see a field
+            <span class="terminal-input">"lint-staged":</span>
+          </p>
+          <p>
+            The task <span class="terminal-input">"eslint --fix"</span> will run
+            ESLint on the files selected
+          </p>
+          <p>
+            while <span class="terminal-input">"prettier --write"</span> will
+            format your code.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

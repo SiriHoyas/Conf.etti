@@ -100,10 +100,17 @@ p {
   margin-left: 0.3rem;
 }
 
+.code-example {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 100vh;
+  padding: 0;
 }
 
 .step-slide {
@@ -131,13 +138,13 @@ p {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   background-color: #691ad7;
 }
 
 .heading {
   margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .links {
