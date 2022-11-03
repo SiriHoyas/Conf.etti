@@ -87,6 +87,11 @@ p {
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   text-align: center;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #78eac4;
+  color: black;
 }
 
 .inactive {
@@ -101,7 +106,8 @@ p {
 }
 
 .code-example {
-  width: 50%;
+  height: 300px;
+  border-radius: 5px;
   margin: 0 auto;
 }
 
