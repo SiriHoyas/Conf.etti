@@ -94,6 +94,19 @@ p {
   color: black;
 }
 
+.in-line-btn {
+  font-size: 0.7rem;
+  background-color: #78eac4;
+  color: black;
+  width: 8rem;
+  padding: 0.4rem;
+  margin-left: 1rem;
+}
+.in-line-btn:hover {
+  background-color: #ef7c85;
+  color: white;
+}
+
 .inactive {
   background-color: rgb(169, 169, 169);
   color: gray;
@@ -109,6 +122,11 @@ p {
   height: 300px;
   border-radius: 5px;
   margin: 0 auto;
+}
+
+.small-code {
+  width: 50%;
+  height: auto;
 }
 
 .container {
